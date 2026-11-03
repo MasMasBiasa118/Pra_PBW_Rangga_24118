@@ -19,6 +19,7 @@ return new class extends Migration
         $table->string('publisher')->nullable();
         $table->year('year')->nullable();
         $table->string('cover')->nullable();
+        $table->text('description')->nullable(); // Field descriptio
         $table->enum('status', ['available', 'borrowed'])->default('available');
         $table->timestamps();
     });
